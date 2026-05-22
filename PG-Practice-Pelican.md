@@ -19,7 +19,7 @@ The engagement began with a comprehensive Nmap scan to identify the exposed atta
 # Nmap Initial Scan
 nmap -p- -sC -sV 192.168.58.98
 ```
-<img width="837" height="804" alt="image" src="https://github.com/user-attachments/assets/bd041d2a-8997-4340-ae1e-0d7dd409bdd7" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/bd041d2a-8997-4340-ae1e-0d7dd409bdd7" />
 
 Nmap Scan Results:
 The scan revealed a diverse set of services:
