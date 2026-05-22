@@ -38,6 +38,7 @@ No robots.txt available, neither anything mentioned in the view source only one 
 <img width="1300" height="153" alt="image" src="https://github.com/user-attachments/assets/eaa8c4ce-f5b0-4925-8e16-9ca59b24041d" />
 
 changed ASCII to words 
+
 <img width="642" height="260" alt="image" src="https://github.com/user-attachments/assets/1b602cff-9a93-496b-858a-fa7131e22984" />
 
 ## 🔓 Phase 2: Initial Foothold
