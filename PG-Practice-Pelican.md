@@ -69,7 +69,7 @@ charles@pelican:~$ sudo -l
 The output indicated that the user charles could run the /usr/bin/gcore command as root without a password.
 ```
 
-<img width="700" height="131" alt="image" src="https://github.com/user-attachments/assets/2773c7f6-4e94-41f0-ab09-9e8bf86750eb" />
+<img width="350" height="65" alt="image" src="https://github.com/user-attachments/assets/2773c7f6-4e94-41f0-ab09-9e8bf86750eb" />
 
 The gcore utility generates a core dump (a memory snapshot) of a running process. To leverage this, I needed to find a sensitive process running as root.
 
@@ -80,9 +80,9 @@ charles@pelican:~$ ps aux | grep root
 Reviewing the process list, I spotted a highly interesting process running with PID 494 (Note: PID may vary across resets): /usr/bin/password-store.
 ```
 
-<img width="856" height="557" alt="image" src="https://github.com/user-attachments/assets/a0447761-8665-4394-9979-28001cda4e0e" />
+<img width="410" height="260" alt="image" src="https://github.com/user-attachments/assets/a0447761-8665-4394-9979-28001cda4e0e" />
 
-<img width="1119" height="312" alt="image" src="https://github.com/user-attachments/assets/2a9438ac-62c4-4d29-9e3b-0f2f9487bfca" />
+<img width="550" height="160" alt="image" src="https://github.com/user-attachments/assets/2a9438ac-62c4-4d29-9e3b-0f2f9487bfca" />
 
 I used my sudo privilege to run gcore against the PID of the password-store process, saving its memory contents to a file.
 
@@ -90,11 +90,11 @@ I used my sudo privilege to run gcore against the PID of the password-store proc
 charles@pelican:~$ sudo gcore -o output 494
 ```
 
-<img width="675" height="126" alt="image" src="https://github.com/user-attachments/assets/b68d897a-d85b-4db0-911e-88cc4f39ec70" />
+<img width="350" height="60" alt="image" src="https://github.com/user-attachments/assets/b68d897a-d85b-4db0-911e-88cc4f39ec70" />
 
 This generated a core dump file (e.g., output.494). Since core dumps contain the raw memory of the process, any cleartext strings handled by the application might be visible. I used the strings command, piped into less (or directly grepped), to analyze the dump.
 
-<img width="626" height="230" alt="image" src="https://github.com/user-attachments/assets/2e875e6f-a946-41c8-b94d-cf0910b343d2" />
+<img width="325" height="125" alt="image" src="https://github.com/user-attachments/assets/2e875e6f-a946-41c8-b94d-cf0910b343d2" />
 
 The analysis successfully revealed a cleartext password: ClogKingpinInning731.
 
@@ -106,6 +106,6 @@ Password: ClogKingpinInning731
 root@pelican:/home/charles#
 ```
 
-<img width="469" height="122" alt="image" src="https://github.com/user-attachments/assets/5bbf8f86-9e3d-43ec-b211-12605ae82a3f" />
+<img width="220" height="65" alt="image" src="https://github.com/user-attachments/assets/5bbf8f86-9e3d-43ec-b211-12605ae82a3f" />
 
 The privilege escalation was successful, resulting in full compromise of the Pelican machine.
