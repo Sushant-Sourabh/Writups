@@ -90,7 +90,7 @@ sqlite3 database.db
 sqlite> select * from users;
 ```
 
-<img width="755" height="164" alt="image" src="https://github.com/user-attachments/assets/7c0ab29b-8909-4251-b958-7ee5fdc1264d" />
+<img width="350" height="80" alt="image" src="https://github.com/user-attachments/assets/7c0ab29b-8909-4251-b958-7ee5fdc1264d" />
 
 This query reveals the hashed password for the wp_hub user:
   -  Hash: $2b$12$lgsrjRa0imePu9iSnp1UsOPLWqAKKYym/z5R59UijsYZ5ss1nwijS
