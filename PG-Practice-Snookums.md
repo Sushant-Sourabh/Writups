@@ -91,7 +91,7 @@ mysql -u root -p
 
 Inside MySQL, I found the SimplePHPGal database and queried the users table. This yielded a Base64 encoded string for the user.
 
-<img width="851" height="490" alt="image" src="https://github.com/user-attachments/assets/a84705af-9d78-4788-9cc3-05bf255212fc" />
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/a84705af-9d78-4788-9cc3-05bf255212fc" />
 
 <img width="380" height="130" alt="image" src="https://github.com/user-attachments/assets/306d5945-066f-499b-867b-5b13aa220a87" />
 
