@@ -126,11 +126,11 @@ sudo -l
 
 The web-scraper script is a Node.js application (/opt/scraper/scraper.js) that takes a file path as an argument and utilizes the happy-dom JavaScript library to parse HTML files.
 
-<img width="600" height="340" alt="image" src="https://github.com/user-attachments/assets/21a6d466-4b56-4fdc-bacd-52574779e7a3" />
+<img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/21a6d466-4b56-4fdc-bacd-52574779e7a3" />
 
 Research indicates that vulnerable versions of happy-dom are susceptible to Arbitrary Code Execution (CVE-2024-51757) via malicious <script> tags due to improper input sanitization during the scraping process.  
 
-<img width="400" height="210" alt="image" src="https://github.com/user-attachments/assets/cb7d3c5a-58cb-49b7-a9b4-a62fed6058ae" />
+<img width="200" height="110" alt="image" src="https://github.com/user-attachments/assets/cb7d3c5a-58cb-49b7-a9b4-a62fed6058ae" />
 
 
 ### Exploiting CVE-2024-51757
@@ -161,6 +161,6 @@ Execute the web scraper using sudo. Because the sudoers file restricts execution
 ```Bash
 sudo /usr/bin/web-scraper /root/web_src_downloaded/../../tmp/pwned.html
 ```
-<img width="567" height="167" alt="image" src="https://github.com/user-attachments/assets/6e25a74f-4c5a-460b-bd41-62364d0a5f25" />
+<img width="260" height="80" alt="image" src="https://github.com/user-attachments/assets/6e25a74f-4c5a-460b-bd41-62364d0a5f25" />
 
 The happy-dom library parses the malicious HTML, triggering our reverse shell script. We successfully catch the connection on our listener and obtain root access.  
