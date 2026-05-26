@@ -70,7 +70,7 @@ The reverse shell successfully connected back, granting me access as the apache 
 
 ## Lateral Movement
 Once on the system, I began enumerating the web root (/var/www/html) for sensitive files.
-<img width="696" height="358" alt="image" src="https://github.com/user-attachments/assets/8db45ff7-95f3-485a-947a-bf204c6d20c3" />
+<img width="300" height="180" alt="image" src="https://github.com/user-attachments/assets/8db45ff7-95f3-485a-947a-bf204c6d20c3" />
 
 
 I searched the PHP files for hardcoded passwords using grep:
