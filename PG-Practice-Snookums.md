@@ -77,7 +77,7 @@ I searched the PHP files for hardcoded passwords using grep:
 ```Bash
 cat *.php | grep -i pass -C 5
 ```
-<img width="857" height="267" alt="image" src="https://github.com/user-attachments/assets/b0f2d4d3-67c7-46b5-9461-4f75b7e6d14e" />
+<img width="400" height="130" alt="image" src="https://github.com/user-attachments/assets/b0f2d4d3-67c7-46b5-9461-4f75b7e6d14e" />
 
 This revealed database credentials inside db.php:
   - DBUSER: root
