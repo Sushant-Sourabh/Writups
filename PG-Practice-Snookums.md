@@ -39,6 +39,8 @@ The application returned the contents of /etc/passwd, confirming the LFI vulnera
 
 <img width="500" height="180" alt="image" src="https://github.com/user-attachments/assets/21a0f6e9-532b-4ee6-8082-7c2986d5170c" />
 
+<img width="500" height="180" alt="image" src="https://github.com/user-attachments/assets/89e293c4-4cde-4dfb-ae1c-130cd629cf13" />
+
 While searching searchsploit for known vulnerabilities in "PHP Photo Album 0.8", I found a few exploits, but none provided immediate Remote Code Execution (RCE) on this specific build.
 
 <img width="470" height="80" alt="image" src="https://github.com/user-attachments/assets/13f881d8-9093-4490-8fa8-f6b29d1dcf58" />
