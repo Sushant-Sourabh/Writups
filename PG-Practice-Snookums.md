@@ -99,13 +99,13 @@ The string U0c5amExTjVaRzVsZVV0bGNuUnBabmt4TWpNPQ== was double-encoded. Decoding
 ```Bash
 echo U0c5amExTjVaRzVsZVV0bGNuUnBabmt4TWpNPQ== | base64 -d | base64 -d
 ```
-<img width="638" height="124" alt="image" src="https://github.com/user-attachments/assets/52a3c10b-6453-483d-bab0-a88c184cb0a5" />
+<img width="310" height="60" alt="image" src="https://github.com/user-attachments/assets/52a3c10b-6453-483d-bab0-a88c184cb0a5" />
 
 Decoded Password: HockSydneyCertify123
 
 From my earlier LFI read of /etc/passwd, I knew michael was a valid system user. I used the decoded password to SSH into the machine as michael, successfully bypassing the initial shell restrictions and capturing the user flag (local.txt).
 
-<img width="697" height="258" alt="image" src="https://github.com/user-attachments/assets/ba4a4d4a-acad-4eee-867e-5630b5c350cd" />
+<img width="350" height="125" alt="image" src="https://github.com/user-attachments/assets/ba4a4d4a-acad-4eee-867e-5630b5c350cd" />
 
 ## 5. Privilege Escalation
 While hunting for privilege escalation vectors, I checked the file permissions within the /etc directory:
