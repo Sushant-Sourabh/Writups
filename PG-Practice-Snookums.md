@@ -29,13 +29,13 @@ To discover hidden directories, I ran a directory brute-force attack using dirb:
 ```bash
 dirb http://192.168.64.58
 ```
-<img width="523" height="381" alt="image" src="https://github.com/user-attachments/assets/919eea7e-6cc0-4ea7-9153-8fcef969644e" />
+<img width="250" height="180" alt="image" src="https://github.com/user-attachments/assets/919eea7e-6cc0-4ea7-9153-8fcef969644e" />
 
 This scan revealed standard web directories including /css, /images, /js, and /photos.
 
 The application returned the contents of /etc/passwd, confirming the LFI vulnerability.
 
-<img width="600" height="190" alt="image" src="https://github.com/user-attachments/assets/02d3b9a2-e359-4e0a-b444-1a0cd00cc39e" />
+<img width="300" height="100" alt="image" src="https://github.com/user-attachments/assets/02d3b9a2-e359-4e0a-b444-1a0cd00cc39e" />
 
 <img width="500" height="180" alt="image" src="https://github.com/user-attachments/assets/21a0f6e9-532b-4ee6-8082-7c2986d5170c" />
 
